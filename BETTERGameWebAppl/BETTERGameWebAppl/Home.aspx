@@ -10,7 +10,7 @@
 </head>
 <body>
     <ul class="HomeButtons">
-      <li><a href="Home.aspx">Login</a></li>
+      <li><a href="Login.aspx">Login</a></li>
       <li><a href="Register.aspx">Register</a></li>
     </ul>
     <h1>Welcome To BETTERGame!</h1>

@@ -99,6 +99,7 @@
     <Content Include="packages.config" />
     <Content Include="BETTERGameMaster.Master" />
     <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Register.aspx" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Web.config" />

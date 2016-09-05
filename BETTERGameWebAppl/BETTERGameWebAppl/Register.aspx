@@ -1,16 +1,18 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/BETTERGameMaster.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="BETTERGameWebAppl.Register" %>
+﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/BETTERGameMaster.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="BETTERGameWebAppl.WebForm2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
+    <section class="registerform">
+        <form>
+             First name:<input type="text" name="firstname"><br>
+             Last name:<input type="text" name="lastname"><br>
+             Email: <input type="email" name="email"><br>
+        </form>
+    </section>
 </body>
 </html>
+</asp:Content>
