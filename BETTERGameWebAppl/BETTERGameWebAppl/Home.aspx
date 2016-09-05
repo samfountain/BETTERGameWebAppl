@@ -14,19 +14,19 @@
       <li><a href="Register.aspx">Register</a></li>
     </ul>
     <h1>Welcome To BETTERGame!</h1>
-    <p>Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
-        Text about the game! 
+    <p>Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
+        Text about the game! <br/>
         </p>
 </body>
 </html>
