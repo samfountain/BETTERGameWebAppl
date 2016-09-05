@@ -10,11 +10,10 @@
 </head>
 <body>
     <section class="loginform cf">
-
         <asp:Login ID="Login" runat="server" DestinationPageUrl="~/Home.aspx">
         </asp:Login>
 
-</section>
+    </section>
 </body>
 </html>
     </form>

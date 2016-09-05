@@ -15,7 +15,7 @@
     <%--Top navigation bar for master page--%>
     <hr />
     <ul class="topNavigation">
-      <li><a href="#home">Home</a></li>
+      <li><a href="Home.aspx">Home</a></li>
       <li><a href="#character">Character</a></li>
       <li><a href="#profile">Profile</a></li>
       <li><a href="#exercise">Exercise</a></li>
@@ -31,7 +31,7 @@
     <footer>
     <hr />
         <ul class="bottomNavigation">
-          <li><a href="#home">Home</a></li>
+          <li><a href="Home.aspx">Home</a></li>
           <li><a href="#character">Character</a></li>
           <li><a href="#profile">Profile</a></li>
           <li><a href="#exercise">Exercise</a></li>
