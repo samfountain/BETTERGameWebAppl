@@ -3,13 +3,13 @@
 <asp:Content ID="HomeContent" ContentPlaceHolderID="Content" Runat="Server">
     <form id="form1" runat="server">
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
 </head>
 <body>
-    <section class="loginform cf">
+    <section class="loginform">
         <asp:Login ID="Login" runat="server" DestinationPageUrl="~/Home.aspx">
         </asp:Login>
 
