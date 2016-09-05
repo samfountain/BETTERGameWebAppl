@@ -1,4 +1,5 @@
-﻿ul.topNavigation 
+﻿/*Navigation buttons on master page*/
+ul.topNavigation 
 {
     list-style-type:none;
     margin:0;
@@ -28,6 +29,7 @@ ul.topNavigation li a:hover
     background-color:lightgray;
 }
 
+/*Title bar of master*/
 #TitleBar
 {
     font-family:Calibri;
@@ -35,12 +37,14 @@ ul.topNavigation li a:hover
     color:dimgrey;
 }
 
+/*Login web form*/
 .loginform 
 {
     font-family: Calibri;
     font-size: 22px;
 }
 
+/*Buttons on home page*/
 .HomeButtons
 {
     list-style-type:none;
