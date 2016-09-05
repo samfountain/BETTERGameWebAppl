@@ -28,18 +28,6 @@
     <asp:ContentPlaceHolder ID="Content" runat="server">
 
     </asp:ContentPlaceHolder>
-    <footer>
-    <hr />
-        <ul class="bottomNavigation">
-          <li><a href="Home.aspx">Home</a></li>
-          <li><a href="#character">Character</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#exercise">Exercise</a></li>
-          <li><a href="#battle">Battle</a></li>
-          <li><a href="#hallofgods">Hall of Gods</a></li>
-          <li><a href="#logout">Logout</a></li>
-        </ul>
-    </footer>
 </body>
 
 </html>
