@@ -6,8 +6,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <ul class="HomeButtons">
+      <li><a href="Home.aspx">Login</a></li>
+      <li><a href="Register.aspx">Register</a></li>
+    </ul>
+    <h1>Welcome To BETTERGame!</h1>
+    <p>Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        Text about the game! 
+        </p>
 </body>
 </html>
 </asp:Content>
