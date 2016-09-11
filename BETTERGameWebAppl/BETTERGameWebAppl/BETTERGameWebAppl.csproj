@@ -100,6 +100,8 @@
     <Content Include="BETTERGameMaster.Master" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="ProfileUpdate.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,6 +144,20 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileUpdate.aspx.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileUpdate.aspx.designer.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

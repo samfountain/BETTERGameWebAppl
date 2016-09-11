@@ -69,3 +69,13 @@ ul.topNavigation li a:hover
     transition:0.5s;
     font-size:30px;
 }
+
+ul.ProfileButtons 
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    font-family:Calibri;
+    float:left;
+}
