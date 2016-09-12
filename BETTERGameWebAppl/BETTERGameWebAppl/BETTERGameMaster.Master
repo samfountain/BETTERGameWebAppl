@@ -20,7 +20,7 @@
       <li><a href="Profile.aspx">Profile</a></li>
       <li><a href="#exercise">Exercise</a></li>
       <li><a href="#battle">Battle</a></li>
-      <li><a href="#hallofgods">Hall of Gods</a></li>
+      <li><a href="HallOfGods.aspx">Hall of Gods</a></li>
       <li><a href="#logout">Logout</a></li>
     </ul>
     <hr />
