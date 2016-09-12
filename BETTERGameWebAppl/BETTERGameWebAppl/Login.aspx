@@ -14,6 +14,10 @@
         </asp:Login>
 
     </section>
+<p>Not a member yet? <ul class="HomeButtons">
+      <li><a href="Register.aspx">Register</a></li>
+    </ul></p>
+
 </body>
 </html>
     </form>

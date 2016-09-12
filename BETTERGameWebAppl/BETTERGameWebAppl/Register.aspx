@@ -8,6 +8,7 @@
 <body>
     <section class="registerform">
         <form>
+             Username:<input type="text" name="username"><br>
              First name:<input type="text" name="firstname"><br>
              Last name:<input type="text" name="lastname"><br>
              Email: <input type="email" name="email"><br>

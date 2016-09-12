@@ -11,7 +11,7 @@
 </head>
 <body>
     <%--Title of game--%>
-    <div id="TitleBar">BETTERGame</div>
+    <a href="Home.aspx"<div  id="TitleBar">BETTERGame</div></a>
     <%--Top navigation bar for master page--%>
     <hr />
     <ul class="topNavigation">
