@@ -79,3 +79,9 @@ ul.ProfileButtons
     font-family:Calibri;
     float:left;
 }
+
+body
+{
+    margin:50px;
+    padding: 20px 20px;
+}

@@ -7,14 +7,31 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    First name: <input type="text" name="firstname"/><br>
-    Last name: <input type="text" name="lastname"/><br>
-    Email: <input type="email" name="email"/><br>
-    Parent Email: <input type="email" name="parentemail"/><br>
-    Password: <input type="password" name="password"/> <br>
+    <form runat="server">
+    <div>
+            <asp:Label ID="lblfname" Text="First name" runat="server"></asp:Label><br />
+
+            <asp:TextBox ID="firstname" runat="server"></asp:TextBox>
+            <br/><br />
+            <asp:Label ID="lbllname" Text="Last name" runat="server"></asp:Label><br />
+            <asp:TextBox ID="lastname" runat="server"></asp:TextBox>
+            <br/><br />
+            <asp:Label ID="lblemail" Text="Email" runat="server"></asp:Label><br />
+            <asp:TextBox ID="email" type="email" runat="server"></asp:TextBox>
+            <br/><br />
+             <asp:Label ID="lblparemail" Text="Parent email" runat="server"></asp:Label><br />
+            <asp:TextBox ID="parentemail" runat="server"></asp:TextBox>
+            <br/><br />
+             <asp:Label ID="lblpassword" Text="Password" runat="server"></asp:Label><br />
+            <asp:TextBox ID="password"  type="password" runat="server"></asp:TextBox>
+                <br />
+                <br />
+            </div>
     <ul class="ProfileButtons">
         <li><a href="Profile.aspx">Back to Profile</a></li>
     </ul>
+
+        </form>
 </body>
 </html>
 </asp:Content>
