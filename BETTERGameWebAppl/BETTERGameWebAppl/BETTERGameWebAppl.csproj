@@ -103,7 +103,10 @@
     <Content Include="Profile.aspx" />
     <Content Include="ProfileUpdate.aspx" />
     <Content Include="HallOfGods.aspx" />
-    <Content Include="CharacterCreation.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,6 +143,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,13 +175,6 @@
     </Compile>
     <Compile Include="HallOfGods.aspx.designer.cs">
       <DependentUpon>HallOfGods.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CharacterCreation.aspx.cs">
-      <DependentUpon>CharacterCreation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CharacterCreation.aspx.designer.cs">
-      <DependentUpon>CharacterCreation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
