@@ -103,6 +103,7 @@
     <Content Include="Profile.aspx" />
     <Content Include="ProfileUpdate.aspx" />
     <Content Include="HallOfGods.aspx" />
+    <Content Include="Character.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="HallOfGods.aspx.designer.cs">
       <DependentUpon>HallOfGods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Character.aspx.cs">
+      <DependentUpon>Character.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Character.aspx.designer.cs">
+      <DependentUpon>Character.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
