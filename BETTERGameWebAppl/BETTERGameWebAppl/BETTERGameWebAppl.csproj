@@ -103,6 +103,7 @@
     <Content Include="Profile.aspx" />
     <Content Include="ProfileUpdate.aspx" />
     <Content Include="HallOfGods.aspx" />
+    <Content Include="CharacterCreation.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="HallOfGods.aspx.designer.cs">
       <DependentUpon>HallOfGods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterCreation.aspx.cs">
+      <DependentUpon>CharacterCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CharacterCreation.aspx.designer.cs">
+      <DependentUpon>CharacterCreation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -12,9 +12,9 @@
     </ul>
     <br />
     <br />
-    Name: <br />
-    Username: <br />
-    Email Address: <br />
+    Name: <br /><br />
+    Username: <br /><br />
+    Email Address: <br /><br />
     Parent Email Address: <br />
 </body>
 </html>
