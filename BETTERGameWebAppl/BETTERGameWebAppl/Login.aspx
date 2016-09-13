@@ -14,6 +14,8 @@
         <asp:Login ID="Login" runat="server" DestinationPageUrl="~/Home.aspx">
         </asp:Login>
 
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="Login" />
+
     </section>
 <p>Not a member yet? <ul class="HomeButtons">
       <li><a href="Register.aspx">Register</a></li>
