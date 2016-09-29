@@ -15,7 +15,7 @@
         <asp:Label ID="lblexercisetime" Text="Exercise Duration:" runat="server"></asp:Label><br />
         <asp:TextBox ID="exercisetime" runat="server"></asp:TextBox>
         <br /><br />
-        <button type="button" name="btnexercise">Submit Exercises</button>  
+        <asp:Button ID="btnexercise" Text="Submit Exercises" runat="server"/>  
     </div>
 </body>
 </html>
