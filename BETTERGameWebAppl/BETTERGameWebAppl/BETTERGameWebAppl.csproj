@@ -108,6 +108,7 @@
     <Content Include="Challenge.aspx" />
     <Content Include="Battle.aspx" />
     <Content Include="BattleSummary.aspx" />
+    <Content Include="Combat.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,6 +216,13 @@
     </Compile>
     <Compile Include="BattleSummary.aspx.designer.cs">
       <DependentUpon>BattleSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Combat.aspx.cs">
+      <DependentUpon>Combat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Combat.aspx.designer.cs">
+      <DependentUpon>Combat.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
