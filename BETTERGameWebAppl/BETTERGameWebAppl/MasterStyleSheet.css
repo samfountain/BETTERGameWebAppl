@@ -70,7 +70,30 @@ ul.topNavigation li a:hover
     font-size:30px;
 }
 
+/*Buttons on profile page*/
 ul.ProfileButtons 
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    font-family:Calibri;
+    float:left;
+}
+
+/*Buttons on character creation page*/
+ul.CharacterButtons 
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    font-family:Calibri;
+    float:left;
+}
+
+/*Buttons on Battle page*/
+ul.BattleButtons 
 {
     list-style-type:none;
     margin:0;

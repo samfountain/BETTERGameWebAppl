@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Create Character" Language="C#" MasterPageFile="~/BETTERGameMaster.Master" AutoEventWireup="true" CodeBehind="CharacterCreation.aspx.cs" Inherits="BETTERGameWebAppl.WebForm6" %>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
-    <form id="form1" runat="server">
+    <form id="characterform" runat="server">
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

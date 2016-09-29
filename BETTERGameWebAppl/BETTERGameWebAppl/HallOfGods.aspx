@@ -23,13 +23,13 @@
             </asp:TableHeaderRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    Row 0, Col 0
+                    Max
                 </asp:TableCell>
                 <asp:TableCell>
-                    Row 0, Col 1
+                    NotMax
                 </asp:TableCell>
                 <asp:TableCell>
-                    Row 0, Col 2
+                    12/9/2016
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

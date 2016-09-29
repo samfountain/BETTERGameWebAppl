@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-USER CHARACTER
+    CHARACTER NAME:  <br />
+    Champion <br /> <br />
+    ELEMENT: <br />
+    Fire <br /> <br />
+    LEVEL: <br />
+    2 <br /> <br />
+    STEP: <br />
+    3 <br /> <br />
+    <ul class="CharacterButtons">
+      <li><a href="CharacterCreation.aspx">Create Character</a></li>
+    </ul>
 </body>
 </html>
 </asp:Content>
