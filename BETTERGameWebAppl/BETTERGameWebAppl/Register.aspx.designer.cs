@@ -31,6 +31,15 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.TextBox firstname;
         
         /// <summary>
+        /// firstNameValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator firstNameValid;
+        
+        /// <summary>
         /// lbllname control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox lastname;
+        
+        /// <summary>
+        /// lastNameValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator lastNameValid;
         
         /// <summary>
         /// lblemail control.
@@ -67,6 +85,15 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
+        /// emailValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emailValid;
+        
+        /// <summary>
         /// lblparemail control.
         /// </summary>
         /// <remarks>
@@ -83,6 +110,15 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox parentemail;
+        
+        /// <summary>
+        /// parentEmailValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator parentEmailValid;
         
         /// <summary>
         /// lblusername control.
@@ -103,6 +139,15 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.TextBox username;
         
         /// <summary>
+        /// usernameValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator usernameValid;
+        
+        /// <summary>
         /// lblpassword control.
         /// </summary>
         /// <remarks>
@@ -119,5 +164,32 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox password;
+        
+        /// <summary>
+        /// passwordValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordValid;
+        
+        /// <summary>
+        /// compareEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator compareEmail;
+        
+        /// <summary>
+        /// btnRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnRegister;
     }
 }

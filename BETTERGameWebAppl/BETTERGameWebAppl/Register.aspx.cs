@@ -13,5 +13,10 @@ namespace BETTERGameWebAppl
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

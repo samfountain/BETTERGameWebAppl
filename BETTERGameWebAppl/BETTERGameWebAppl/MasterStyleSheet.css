@@ -21,7 +21,7 @@ ul.topNavigation li a
     padding:10px 12px;
     text-decoration:none;
     transition:0.5s;
-    font-size:20px;
+    font-size:30px;
 }
 
 ul.topNavigation li a:hover 
@@ -59,15 +59,43 @@ ul.topNavigation li a:hover
     float: left;
 }
 
-.HomeButtons li a 
+.HomeButtons li a
 {
     display: inline-block;
     text-align: center;
-    color:black;
+    color:white;
     padding:10px 12px;
     text-decoration:none;
+    border:solid;
+    background-color:black;
     transition:0.5s;
-    font-size:30px;
+    font-size:50px;
+}
+
+.HomeButtons 
+{
+    display: inline-block;
+    text-align: center;
+    color:white;
+    padding:10px 12px;
+    text-decoration:none;
+    border:solid;
+    background-color:black;
+    transition:0.5s;
+    font-size:50px;
+}
+
+.HomeBody
+{
+    font-family: Calibri;
+    font-size: 22px;
+}
+
+.HomeTitle
+{
+    font-family:Calibri;
+    font-size:70px;
+    color:dimgrey;
 }
 
 /*Buttons on profile page*/
