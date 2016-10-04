@@ -17,7 +17,7 @@
                 
     <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">Username</asp:Label>
         <br />                            
-    <asp:TextBox ID="UserName" runat="server"></asp:TextBox><br />
+    <asp:TextBox ID="UserName" runat="server" Font-Size="Large"></asp:TextBox><br />
     <asp:RequiredFieldValidator 
                     id="UserNameValid"
                     ControlToValidate="UserName"
@@ -31,7 +31,7 @@
                                                
     <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password</asp:Label>
     <br />                                
-    <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox><br />
+    <asp:TextBox ID="Password" runat="server" Font-Size="Large" TextMode="Password"></asp:TextBox><br />
     <asp:RequiredFieldValidator 
                     id="PasswordValid"
                     ControlToValidate="Password"

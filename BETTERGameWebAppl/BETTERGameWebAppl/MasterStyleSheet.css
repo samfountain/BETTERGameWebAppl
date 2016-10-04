@@ -135,4 +135,13 @@ body
 {
     margin:50px;
     padding: 20px 20px;
+    font-family: Calibri;
+    font-size: 22px;
+    
+}
+
+.registerform
+{
+    font-family: Calibri;
+    font-size: 22px;
 }
