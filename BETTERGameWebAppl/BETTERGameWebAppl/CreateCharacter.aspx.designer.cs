@@ -13,6 +13,15 @@ namespace BETTERGameWebAppl {
     public partial class WebForm12 {
         
         /// <summary>
+        /// createcharacterform control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm createcharacterform;
+        
+        /// <summary>
         /// lblcharelement control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlelement;
+        
+        /// <summary>
+        /// elementvalidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator elementvalidator;
         
         /// <summary>
         /// lblcharname control.
@@ -49,12 +67,21 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.TextBox charname;
         
         /// <summary>
-        /// btncreate control.
+        /// charNameValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btncreate;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator charNameValidator;
+        
+        /// <summary>
+        /// btncharcreate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btncharcreate;
     }
 }
