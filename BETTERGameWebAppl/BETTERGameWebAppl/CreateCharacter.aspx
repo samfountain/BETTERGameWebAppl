@@ -25,8 +25,7 @@
             ErrorMessage="Element is required!" 
             ForeColor="Red"
             ValidationGroup="1"
-            runat="server" >
-        </asp:RequiredFieldValidator>
+            runat="server" />
     <br /> <br />
     <asp:Label ID="lblcharname" Text="Character Name:" runat="server"></asp:Label><br />
     <asp:TextBox ID="charname" runat="server"></asp:TextBox> <br />
@@ -35,7 +34,7 @@
                     Display="Static"
                     ErrorMessage="Character Name is required!"
                     ForeColor="Red"
-                    ValidationGorup="1"
+                    ValidationGroup="1"
                     runat="server"/>
         <br /><br />
     <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" runat="server" ValidationGroup="1">Create Character</asp:LinkButton>

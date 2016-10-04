@@ -4,14 +4,14 @@
     <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-
+    <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
     <section class="registerform">
         <form runat="server">
             <div>
             <asp:Label ID="lblfname" Text="First name" runat="server" AssociatedControlID="firstname"></asp:Label><br />
-            <asp:TextBox ID="firstname" runat="server"></asp:TextBox>
+            <asp:TextBox ID="firstname" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
             <asp:RequiredFieldValidator 
                     id="firstNameValid"
@@ -23,7 +23,7 @@
                     runat="server"/> 
             <br/>
             <asp:Label ID="lbllname" Text="Last name" runat="server" AssociatedControlID="lastname"></asp:Label><br />
-            <asp:TextBox ID="lastname" runat="server"></asp:TextBox>
+            <asp:TextBox ID="lastname" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
             <asp:RequiredFieldValidator 
                     id="lastNameValid"
@@ -35,7 +35,7 @@
                     runat="server"/>
             <br/>
             <asp:Label ID="lblemail" Text="Email" runat="server"></asp:Label><br />
-            <asp:TextBox ID="email" type="email" runat="server"></asp:TextBox>
+            <asp:TextBox ID="email" type="email" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
             <asp:RequiredFieldValidator 
                     id="emailValid"
@@ -47,7 +47,7 @@
                     runat="server"/>
             <br />
              <asp:Label ID="lblparemail" Text="Parent email" runat="server"></asp:Label><br />
-            <asp:TextBox ID="parentemail" runat="server"></asp:TextBox>
+            <asp:TextBox ID="parentemail" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
             <asp:RequiredFieldValidator 
                     id="parentEmailValid"
@@ -59,7 +59,7 @@
                     runat="server"/>    
             <br />
              <asp:Label ID="lblusername" Text="Username" runat="server"></asp:Label><br />
-            <asp:TextBox ID="username" runat="server"></asp:TextBox>
+            <asp:TextBox ID="username" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
             <asp:RequiredFieldValidator 
                     id="usernameValid"
@@ -71,7 +71,7 @@
                     runat="server"/>     
             <br />
              <asp:Label ID="lblpassword" Text="Password" runat="server"></asp:Label><br />
-            <asp:TextBox ID="password"  type="password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="password"  type="password" runat="server" Font-Size="Large"></asp:TextBox>
             <br />
             <asp:RequiredFieldValidator 
                 id="passwordValid"
@@ -102,7 +102,7 @@
             </div>
 
             
-            <asp:LinkButton CssClass="HomeButtons" ID="btnRegister" runat="server" ValidationGroup="1">LinkButton</asp:LinkButton>
+            <asp:LinkButton CssClass="HomeButtons" ID="btnRegister" runat="server" ValidationGroup="1">Register</asp:LinkButton>
         </form>
     
         

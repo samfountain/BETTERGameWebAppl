@@ -10,10 +10,10 @@
 <body>
     <div>
         <asp:Label ID="lblexercisedone" Text="Exercises Done:" runat="server"></asp:Label><br />
-        <asp:TextBox ID="exercisedone" runat="server"></asp:TextBox>
+        <asp:TextBox ID="exercisedone" runat="server" Font-Size="Large"></asp:TextBox>
         <br /><br />
         <asp:Label ID="lblexercisetime" Text="Exercise Duration:" runat="server"></asp:Label><br />
-        <asp:TextBox ID="exercisetime" runat="server"></asp:TextBox>
+        <asp:TextBox ID="exercisetime" runat="server" Font-Size="Large"></asp:TextBox>
         <br /><br />
         <asp:Button ID="btnexercise" Text="Submit Exercises" runat="server"/>  
     </div>
