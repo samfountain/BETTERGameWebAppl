@@ -17,7 +17,7 @@
     STEP: <br />
     <asp:Label ID="lblstep" Text="3" runat="server"></asp:Label><br /><br />
     <ul class="CharacterButtons">
-      <li><a href="CharacterCreation.aspx">Create Character</a></li>
+      <li><a href="CreateCharacter.aspx">Create Character</a></li>
     </ul>
     </div>
 </body>

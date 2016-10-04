@@ -109,6 +109,7 @@
     <Content Include="Battle.aspx" />
     <Content Include="BattleSummary.aspx" />
     <Content Include="Combat.aspx" />
+    <Content Include="CreateCharacter.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,6 +224,13 @@
     </Compile>
     <Compile Include="Combat.aspx.designer.cs">
       <DependentUpon>Combat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCharacter.aspx.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateCharacter.aspx.designer.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
