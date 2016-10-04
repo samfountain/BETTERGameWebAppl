@@ -13,13 +13,22 @@ namespace BETTERGameWebAppl {
     public partial class WebForm8 {
         
         /// <summary>
-        /// ddlchallenger control.
+        /// ddlopponent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlchallenger;
+        protected global::System.Web.UI.WebControls.DropDownList ddlopponent;
+        
+        /// <summary>
+        /// opponentvalidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator opponentvalidator;
         
         /// <summary>
         /// lblchelement control.
@@ -49,12 +58,12 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.Label lblchstep;
         
         /// <summary>
-        /// btnfight control.
+        /// btnchallenge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnfight;
+        protected global::System.Web.UI.WebControls.LinkButton btnchallenge;
     }
 }
