@@ -20,7 +20,7 @@
         <br />
         <asp:RequiredFieldValidator ID="elementvalidator" 
             ControlToValidate="ddlelement"
-            InitialValue="0"
+            Value="0"
             Display="Static"
             ErrorMessage="Element is required!" 
             ForeColor="Red"
