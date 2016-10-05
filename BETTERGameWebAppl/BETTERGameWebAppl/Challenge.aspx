@@ -9,12 +9,21 @@
 <body>
     <form runat="server">
     <div>
-    <label>Challenger:</label> <br />
-    <asp:DropDownList ID="ddlchallenger" runat="server" Width="200px">
-        <asp:ListItem Text="Select Challenger" Value="0"></asp:ListItem>
+    <label>Opponent:</label> <br />
+    <asp:DropDownList ID="ddlopponent" runat="server" Width="200px">
+        <asp:ListItem Text="Select Opponent" Value="0"></asp:ListItem>
         <asp:ListItem Text="Boris" Value="1"></asp:ListItem>
         <asp:ListItem Text="Ted" Value="2"></asp:ListItem>
     </asp:DropDownList>
+        <br />
+    <asp:RequiredFieldValidator ID="opponentvalidator" 
+            ControlToValidate="ddlopponent"
+            InitialValue="0"
+            Display="Static"
+            ErrorMessage="Opponent is required!" 
+            ForeColor="Red"
+            ValidationGroup="1"
+            runat="server" />
     <br /> <br />
     <label>Challenger Element:</label> <br />
     <asp:Label ID="lblchelement" Text="Water" runat="server"></asp:Label><br /> <br />
@@ -22,7 +31,8 @@
     <asp:Label ID="lblchlvl" Text="2" runat="server"></asp:Label><br /> <br />
     <label>Challenger Step:</label> <br />
     <asp:Label ID="lblchstep" Text="1" runat="server"></asp:Label><br /> <br />
-    <asp:Button ID="btnfight" Text="FIGHT!" runat="server" PostBackUrl="~/Combat.aspx" /><br /> <br />    
+    <asp:LinkButton CssClass="HomeButtons" ID="btnchallenge" PostBackUrl="~/Combat.aspx" runat="server" ValidationGroup="1">FIGHT!</asp:LinkButton>
+    <br /><br />
     <ul class="BattleButtons">
      <li><a href="Battle.aspx">Back to Battle</a></li>
     </ul>
