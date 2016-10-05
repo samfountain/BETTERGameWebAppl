@@ -31,7 +31,7 @@
     <asp:Label ID="lblchlvl" Text="2" runat="server"></asp:Label><br /> <br />
     <label>Challenger Step:</label> <br />
     <asp:Label ID="lblchstep" Text="1" runat="server"></asp:Label><br /> <br />
-    <asp:LinkButton CssClass="HomeButtons" ID="btnchallenge" runat="server" ValidationGroup="1">FIGHT!</asp:LinkButton>
+    <asp:LinkButton CssClass="HomeButtons" ID="btnchallenge" PostBackUrl="~/Combat.aspx" runat="server" ValidationGroup="1">FIGHT!</asp:LinkButton>
     <br /><br />
     <ul class="BattleButtons">
      <li><a href="Battle.aspx">Back to Battle</a></li>

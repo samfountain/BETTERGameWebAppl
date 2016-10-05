@@ -8,14 +8,18 @@
 </head>
 <body>
     <div>
-    CHARACTER NAME:  <br />
+    <label>CHARACTER NAME:</label>  <br />
     <asp:Label ID="lblcname" Text="Champion" runat="server"></asp:Label><br /><br />
-    ELEMENT: <br />
+    <label>ELEMENT:</label> <br />
     <asp:Label ID="lblelement" Text="Fire" runat="server"></asp:Label><br /><br />
-    LEVEL: <br />
+    <label>LEVEL:</label> <br />
     <asp:Label ID="lbllevel" Text="2" runat="server"></asp:Label><br /><br />
-    STEP: <br />
+    <label>STEP:</label> <br />
     <asp:Label ID="lblstep" Text="3" runat="server"></asp:Label><br /><br />
+    <label>FIGHTS:</label> <br />
+    <asp:Label ID="lblfightnum" Text="14" runat="server"></asp:Label><br /><br />
+    <label>WIN/LOSS:</label> <br />
+    <asp:Label ID="lblwinloss" Text="10/4" runat="server"></asp:Label><br /><br />
     <ul class="CharacterButtons">
       <li><a href="CreateCharacter.aspx">Create Character</a></li>
     </ul>
