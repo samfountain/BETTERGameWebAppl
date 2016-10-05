@@ -3,7 +3,7 @@
     <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Update Profile</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
@@ -86,9 +86,8 @@
                 <br />
                 <br />
                 </div>
-    <ul class="ProfileButtons">
-        <asp:LinkButton CssClass="HomeButtons" ID="btnBackToProfile" runat="server" ValidationGroup="1">Back</asp:LinkButton>
-    </ul>
+        <asp:LinkButton CssClass="HomeButtons" ID="btnUpdate" runat="server" ValidationGroup="1">Submit</asp:LinkButton> 
+        <asp:LinkButton PostBackUrl="~/Profile.aspx" CssClass="HomeButtons" ID="btnBackToProfile" runat="server">Back</asp:LinkButton>
 
         </form>
 </body>

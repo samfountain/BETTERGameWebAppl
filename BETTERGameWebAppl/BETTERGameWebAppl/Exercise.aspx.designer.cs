@@ -76,7 +76,6 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator exerciseTimeValidator;
         
         /// <summary>
-        /// btnsubmitexercise control.
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
@@ -84,14 +83,5 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton btnSubmit;
-        
-        /// <summary>
-        /// btnexercise control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnsubmitexercise;
     }
 }

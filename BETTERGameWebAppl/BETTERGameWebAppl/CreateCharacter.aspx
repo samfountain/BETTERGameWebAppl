@@ -3,7 +3,7 @@
     <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Create Character</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
@@ -39,7 +39,7 @@
         <br /><br />
     <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" runat="server" ValidationGroup="1">Create</asp:LinkButton>
 
-        <br /> <br /> 
+        
         <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Character.aspx" ID="btnBack" runat="server">Back</asp:LinkButton>
     </div>
     </form>

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Excersise</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
@@ -29,8 +29,8 @@
                     ValidationGroup="1"
                     runat="server"/>
         <br /><br />
-        <asp:LinkButton CssClass="HomeButtons" ID="btnSubmit" runat="server">Submit</asp:LinkButton>
-        <asp:Button ID="btnexercise" Text="Submit Exercises" runat="server"/>  
+         
+        <asp:LinkButton CssClass="HomeButtons" ID="btnSubmit" runat="server" ValidationGroup="1">Submit</asp:LinkButton>  
     </div>
 </body>
 </html>

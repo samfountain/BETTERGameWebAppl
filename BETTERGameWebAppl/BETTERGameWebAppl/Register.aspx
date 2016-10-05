@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Register</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
