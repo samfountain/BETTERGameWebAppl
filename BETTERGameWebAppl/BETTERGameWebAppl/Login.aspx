@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    
+    <%--Login page, using asp login control--%>
+    <%--Login control has been set to a lay out template, to allow custom styling of the parts--%>
     <section class="loginform">
         <asp:Login ID="Login" runat="server" DestinationPageUrl="~/Home.aspx">
             <LayoutTemplate>
@@ -52,7 +53,7 @@
             </LayoutTemplate>
         </asp:Login>
 <br />
-    
+<%--Option to register if no account owned--%>    
 <p>Not a member yet? <br />
     <br />
     <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Register.aspx" ID="register" runat="server">Register</asp:LinkButton></p>

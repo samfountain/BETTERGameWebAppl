@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Table holding hall of gods characters--%>
     <div>
         <asp:Table ID="HallOfGodsTable" runat="server"
             CellPadding = "10" 

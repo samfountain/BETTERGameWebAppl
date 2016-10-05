@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Simple display page of profile details, with an update button.--%>
     <form runat="server">
     <br />
     <br />

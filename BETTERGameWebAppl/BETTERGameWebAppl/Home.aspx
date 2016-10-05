@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Landing page for the web app. Brief description of game and login and register options--%>
     <form runat="server">
     <h1 class="HomeTitle">Welcome To BETTERGame!</h1>
     <p class="HomeBody">BETTERGame is a fun and exciting game for you to play with all your friends!
@@ -26,12 +27,5 @@
     </form>
 </body>
 </html>
-</asp:Content>
-<asp:Content ID="Content1" runat="server" contentplaceholderid="head">
-    <style type="text/css">
-        .HomeBody {
-            width: 768px;
-        }
-    </style>
-</asp:Content>
+
 

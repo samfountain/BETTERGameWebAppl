@@ -3,13 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
     <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    
     <title>Register</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Register page, where users fill in details to create an account--%>
     <section class="registerform">
         <form runat="server">
             <div>
+            <%-- labels and textboxes, with required field validators attached below.--%>
             <asp:Label ID="lblfname" Text="First name" runat="server" AssociatedControlID="firstname"></asp:Label><br />
             <asp:TextBox ID="firstname" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
@@ -82,26 +85,24 @@
                 ForeColor="Red"
                 runat="server"/> 
             <br />
-                <br />
-                <asp:CompareValidator 
-                    ID="compareEmail" 
-                    runat="server" 
-                    ErrorMessage="Supplied email and parent email cannot be the same."
-                    ControlToCompare="email"
-                    ForeColor="Red"
-                    Type="String"
-                    Operator="NotEqual"
-                    ValidationGroup="1"
-                    ControlToValidate="parentemail">
-                    
-                </asp:CompareValidator>
+            <br />
+            <%--Compare validator to ensure the email address and parent email address are not the same--%>
+            <asp:CompareValidator 
+                ID="compareEmail" 
+                runat="server" 
+                ErrorMessage="Supplied email and parent email cannot be the same."
+                ControlToCompare="email"
+                ForeColor="Red"
+                Type="String"
+                Operator="NotEqual"
+                ValidationGroup="1"
+                ControlToValidate="parentemail">
+            </asp:CompareValidator>
                 <br />
                 <br />
                 <br />
 
             </div>
-
-            
             <asp:LinkButton CssClass="HomeButtons" ID="btnRegister" runat="server" ValidationGroup="1">Register</asp:LinkButton>
         </form>
     

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Page to allow users to update their profile details--%>
     <form runat="server">
             <div>
+            <%--Similar layout to the register page, labels, textboxes and validators for the fields to update.--%>
             <asp:Label ID="lblfname" Text="First name" runat="server" AssociatedControlID="firstname"></asp:Label><br />
             <asp:TextBox ID="firstname" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
@@ -70,6 +72,7 @@
                 runat="server"/> 
             <br />
                 <br />
+                <%--Compare validator for email addresses--%>
                 <asp:CompareValidator 
                     ID="compareEmail" 
                     runat="server" 

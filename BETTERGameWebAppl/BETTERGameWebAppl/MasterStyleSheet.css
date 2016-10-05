@@ -44,7 +44,7 @@ ul.topNavigation li a:hover
     font-size: 22px;
 }
 
-/*Buttons on home page*/
+/*Buttons on home page, also used on all buttons on pages to keep consistent*/
 .HomeButtons
 {
     list-style-type:none;
@@ -85,6 +85,7 @@ ul.topNavigation li a:hover
     font-size:50px;
 }
 
+/*Body of the Home page*/
 .HomeBody p
 {
     font-family: Calibri;
@@ -92,6 +93,7 @@ ul.topNavigation li a:hover
     max-width:300px;
 }
 
+/*Title of home page*/
 .HomeTitle
 {
     font-family:Calibri;
@@ -99,39 +101,7 @@ ul.topNavigation li a:hover
     color:dimgrey;
 }
 
-/*Buttons on profile page*/
-ul.ProfileButtons 
-{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    font-family:Calibri;
-    float:left;
-}
-
-/*Buttons on character creation page*/
-ul.CharacterButtons 
-{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    font-family:Calibri;
-    float:left;
-}
-
-/*Buttons on Battle page*/
-ul.BattleButtons 
-{
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow: hidden;
-    font-family:Calibri;
-    float:left;
-}
-
+/*General body styling to keep pages consistent*/
 body
 {
     margin:50px;
@@ -141,6 +111,7 @@ body
     
 }
 
+/*style for register form*/
 .registerform
 {
     font-family: Calibri;
