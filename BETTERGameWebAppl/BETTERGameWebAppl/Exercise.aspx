@@ -15,6 +15,7 @@
         <asp:Label ID="lblexercisetime" Text="Exercise Duration:" runat="server"></asp:Label><br />
         <asp:TextBox ID="exercisetime" runat="server" Font-Size="Large"></asp:TextBox>
         <br /><br />
+        <asp:LinkButton CssClass="HomeButtons" ID="btnSubmit" runat="server">Submit</asp:LinkButton>
         <asp:Button ID="btnexercise" Text="Submit Exercises" runat="server"/>  
     </div>
 </body>

@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    <ul class="ProfileButtons">
-        <li><a href="ProfileUpdate.aspx">Update Profile</a></li>
-    </ul>
+    <form runat="server">
     <br />
     <br />
     Name: <br /><br />
     Username: <br /><br />
     Email Address: <br /><br />
-    Parent Email Address: <br />
+    Parent Email Address: <br /><br />
+    <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/ProfileUpdate.aspx" ID="LinkButton1" runat="server">Update</asp:LinkButton>
+        </form>
 </body>
 </html>
 </asp:Content>

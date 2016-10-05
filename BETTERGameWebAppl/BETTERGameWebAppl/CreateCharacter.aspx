@@ -10,7 +10,7 @@
     <form id="createcharacterform" runat="server">
     <div>
     <asp:Label ID="lblcharelement" Text="Element: " runat="server"></asp:Label> <br />
-    <asp:DropDownList ID="ddlelement" runat="server" Width="200px">
+    <asp:DropDownList ID="ddlelement" runat="server" Width="200px" Font-Size="Large">
         <asp:ListItem Text="Select Element" Value="0"></asp:ListItem>
         <asp:ListItem Text="Fire" Value="1"></asp:ListItem>
         <asp:ListItem Text="Water" Value="2"></asp:ListItem>
@@ -28,7 +28,7 @@
             runat="server" />
     <br /> <br />
     <asp:Label ID="lblcharname" Text="Character Name:" runat="server"></asp:Label><br />
-    <asp:TextBox ID="charname" runat="server"></asp:TextBox> <br />
+    <asp:TextBox ID="charname" runat="server" Font-Size="Large"></asp:TextBox> <br />
     <asp:RequiredFieldValidator id="charNameValidator"
                     ControlToValidate="charname"
                     Display="Static"
@@ -37,12 +37,10 @@
                     ValidationGroup="1"
                     runat="server"/>
         <br /><br />
-    <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" runat="server" ValidationGroup="1">Create Character</asp:LinkButton>
+    <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" runat="server" ValidationGroup="1">Create</asp:LinkButton>
 
-        <br /> <br />    
-    <ul class="CharacterButtons">
-     <li><a href="Character.aspx">Back to Character</a></li>
-    </ul>
+        <br /> <br /> 
+        <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Character.aspx" ID="btnBack" runat="server">Back</asp:LinkButton>
     </div>
     </form>
 </body>

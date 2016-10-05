@@ -87,7 +87,7 @@
                 <br />
                 </div>
     <ul class="ProfileButtons">
-        <asp:LinkButton CssClass="HomeButtons" ID="btnBackToProfile" runat="server" ValidationGroup="1">Back to profile</asp:LinkButton>
+        <asp:LinkButton CssClass="HomeButtons" ID="btnBackToProfile" runat="server" ValidationGroup="1">Back</asp:LinkButton>
     </ul>
 
         </form>

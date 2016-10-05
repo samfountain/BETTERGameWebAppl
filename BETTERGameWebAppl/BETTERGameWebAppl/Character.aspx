@@ -6,7 +6,9 @@
     <title></title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
+    
 <body>
+    <form runat="server">
     <div>
     CHARACTER NAME:  <br />
     <asp:Label ID="lblcname" Text="Champion" runat="server"></asp:Label><br /><br />
@@ -17,9 +19,10 @@
     STEP: <br />
     <asp:Label ID="lblstep" Text="3" runat="server"></asp:Label><br /><br />
     <ul class="CharacterButtons">
-      <li><a href="CreateCharacter.aspx">Create Character</a></li>
+      <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/CreateCharacter.aspx" ID="btnCreateChar" runat="server">Create</asp:LinkButton>
     </ul>
     </div>
+        </form>
 </body>
 </html>
 </asp:Content>
