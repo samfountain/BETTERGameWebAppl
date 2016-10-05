@@ -3,10 +3,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <%--Battle summary page hold information about a user's previous battles--%>
     <title>Battle Summary</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--Information about users' battles--%>
     <div>
     <label>Character Name:</label> <br />
     <asp:Label ID="lblcharname" Text="Sam" runat="server"></asp:Label><br /> <br />
@@ -29,6 +31,7 @@
     <label>Experience:</label> <br />
     <asp:Label ID="lblexp" Text="111" runat="server"></asp:Label><br /> <br />
     </div>
+    <%--Link which returns to the battle page--%>
     <ul class="BattleButtons">
       <li><a href="Battle.aspx">Back to Battle</a></li>
     </ul>

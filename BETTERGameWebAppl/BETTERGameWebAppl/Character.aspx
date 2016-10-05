@@ -3,6 +3,7 @@
         <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <%--Character page shows information about a user's character--%>
     <title>Character</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
@@ -10,6 +11,7 @@
 <body>
     <form runat="server">
     <div>
+    <%--Information about user characters--%>
     <label>CHARACTER NAME:</label>  <br />
     <asp:Label ID="lblcname" Text="Champion" runat="server"></asp:Label><br /><br />
     <label>ELEMENT:</label> <br />
@@ -22,6 +24,7 @@
     <asp:Label ID="lblfightnum" Text="14" runat="server"></asp:Label><br /><br />
     <label>WIN/LOSS:</label> <br />
     <asp:Label ID="lblwinloss" Text="10/4" runat="server"></asp:Label><br /><br />
+    <%--Button that links to create character page--%>
     <ul class="CharacterButtons">
       <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/CreateCharacter.aspx" ID="btnCreateChar" runat="server">Create</asp:LinkButton>
     </ul>

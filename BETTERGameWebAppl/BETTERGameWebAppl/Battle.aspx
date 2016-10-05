@@ -3,13 +3,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <%--Battle page which holds links to challenge and battle summary--%>
     <title>Battle</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <%--An unordered list that holds links to related pages--%>
     <ul class="BattleButtons">
       <li><a href="Challenge.aspx">Challenge</a></li>
+    </ul>
       <br /><br />
+    <%--Previous battle summary table--%>
       <asp:Label ID="lblprev10battle" Text="Last 10 Battles:" runat="server"></asp:Label><br />
       <div>
         <asp:Table ID="tblbattlelog" runat="server"
@@ -32,6 +36,7 @@
         </asp:Table>
     </div>
         <br /><br />
+    <ul class="BattleButtons">
       <li><a href="BattleSummary.aspx">Battle Summary</a></li>
     </ul>
 </body>

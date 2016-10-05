@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <%--Combat page will show images of characters that are battling--%>
     <title></title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
