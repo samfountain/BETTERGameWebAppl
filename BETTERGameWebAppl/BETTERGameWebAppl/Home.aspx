@@ -31,3 +31,14 @@
 
 
 
+<asp:Content ID="Content1" runat="server" contentplaceholderid="head">
+    <style type="text/css">
+        .HomeBody {
+            width: 1362px;
+        }
+    </style>
+</asp:Content>
+
+
+
+
