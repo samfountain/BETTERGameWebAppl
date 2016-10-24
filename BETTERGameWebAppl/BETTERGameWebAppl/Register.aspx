@@ -85,6 +85,31 @@
                 ForeColor="Red"
                 runat="server"/> 
             <br />
+            <asp:Label ID="lblconfirmpassword" Text="Confirm Password" runat="server"></asp:Label><br />
+            <asp:TextBox ID="confirmpassword"  type="password" runat="server" Font-Size="Large"></asp:TextBox>
+            <br />
+            <asp:RequiredFieldValidator 
+                id="confirmPasswordValid"
+                ControlToValidate="confirmpassword"
+                Display="Static"
+                ErrorMessage="Password is required!"
+                ValidationGroup="1"
+                ForeColor="Red"
+                runat="server"/> 
+            <br />
+            <br />
+            <asp:CompareValidator 
+                ID="comparePassword" 
+                runat="server" 
+                ErrorMessage="Passwords do not match."
+                ControlToCompare="password"
+                ForeColor="Red"
+                Type="String"
+                Operator="Equal"
+                ValidationGroup="1"
+                ControlToValidate="confirmpassword">
+                </asp:CompareValidator>
+            <br />
             <br />
             <%--Compare validator to ensure the email address and parent email address are not the same--%>
             <asp:CompareValidator 
