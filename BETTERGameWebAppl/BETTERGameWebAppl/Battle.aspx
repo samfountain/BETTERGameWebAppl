@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
+    <form runat="server">
     <%--An unordered list that holds links to related pages--%>
-    <ul class="BattleButtons">
-      <li><a href="Challenge.aspx">Challenge</a></li>
-    </ul>
+    <asp:LinkButton PostBackUrl="~/Challenge.aspx" CssClass="HomeButtons" ID="btnChallenge" runat="server">Challenge</asp:LinkButton>
       <br /><br />
     <%--Previous battle summary table--%>
       <asp:Label ID="lblprev10battle" Text="Last 10 Battles:" runat="server"></asp:Label><br />
@@ -35,10 +34,8 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-        <br /><br />
-    <ul class="BattleButtons">
-      <li><a href="BattleSummary.aspx">Battle Summary</a></li>
-    </ul>
-</body>
+     
+    </body>
+</form>
 </html>
 </asp:Content>

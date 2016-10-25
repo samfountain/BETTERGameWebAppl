@@ -86,11 +86,11 @@ ul.topNavigation li a:hover
 }
 
 /*Body of the Home page*/
-.HomeBody p
+.HomeBody 
 {
     font-family: Calibri;
     font-size: 22px;
-    max-width:300px;
+    max-width:800px;
 }
 
 /*Title of home page*/
