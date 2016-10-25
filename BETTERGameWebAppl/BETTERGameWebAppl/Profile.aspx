@@ -5,13 +5,18 @@
 <head>
     <title>Profile</title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
+    <script "></script>
 </head>
 <body>
     <%--Simple display page of profile details, with an update button.--%>
+    
+    
     <form runat="server">
     <br />
+        
     <br />
-    Name: <br /><br />
+
+    Name: <asp:TextBox ID="Name" runat="server" Enabled="false"></asp:TextBox>
     Username: <br /><br />
     Email Address: <br /><br />
     Parent Email Address: <br /><br />
