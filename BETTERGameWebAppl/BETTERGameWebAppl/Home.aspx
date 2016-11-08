@@ -10,7 +10,7 @@
 </head>
 <body>
     <%--Landing page for the web app. Brief description of game and login and register options--%>
-    <form runat="server">
+    
     <h1 class="HomeTitle">Welcome To BETTERGame!</h1>
     <p class="HomeBody">BETTERGame is a fun and exciting game for you to play with all your friends!
         You can create your own elemental heroes and make them stronger by exercising and telling us what it was that you did.
@@ -24,7 +24,7 @@
 
     <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Login.aspx" ID="login" runat="server">Login</asp:LinkButton> 
     <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Register.aspx" ID="register" runat="server">Register</asp:LinkButton>
-    </form>
+    
 </body>
 </html>
     </asp:content>

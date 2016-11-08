@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BETTERGameMaster.master.cs" Inherits="BETTERGameWebAppl.BETTERGameMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="BETTERGameMaster.master.cs" Inherits="BETTERGameWebAppl.BETTERGameMaster" %>
 
 <!DOCTYPE html>
 
@@ -10,13 +10,14 @@
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
-<body>
+<body runat="server">
+    <form runat="server">
     <%--Title of game--%>
     <a href="Home.aspx"<div  id="TitleBar">BETTERGame</div></a>
     <%--Top navigation bar for master page--%>
     <hr />
     <ul class="topNavigation">
-      <li><a href="Home.aspx">Home</a></li>
+      <li><asp:LinkButton Visible="false" ID="Home" runat="server">LinkButton</asp:LinkButton></li>
       <li><a href="Character.aspx">Character</a></li>
       <li><a href="Profile.aspx">Profile</a></li>
       <li><a href="Exercise.aspx">Exercise</a></li>
@@ -28,7 +29,10 @@
     
     <asp:ContentPlaceHolder ID="Content" runat="server">
 
+        
     </asp:ContentPlaceHolder>
+        </form>
 </body>
+
 
 </html>
