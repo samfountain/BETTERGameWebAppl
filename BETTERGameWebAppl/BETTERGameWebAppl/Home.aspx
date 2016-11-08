@@ -16,7 +16,7 @@
         You can create your own elemental heroes and make them stronger by exercising and telling us what it was that you did.
         Or you can increase their strength by battling other fierce opponents. It should be known that exercising is the best way to
         increase your elemental hero's power. Will your character enter the Hall of the Gods?
-         <br/>
+        <br/>
         </p>
         <br />
         <br />
