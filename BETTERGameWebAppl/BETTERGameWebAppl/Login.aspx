@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/BETTERGameMaster.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BETTERGameWebAppl.WebForm1" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="Content" Runat="Server">
-    <form id="form1" runat="server">
+   
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
+   
 <head>
     <title></title>
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
@@ -48,7 +50,7 @@
     <br />                               
     <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
                                    
-    <asp:Button CssClass="HomeButtons" ID="LoginButton" runat="server" CommandName="Login" Text="Login" ValidationGroup="Login" />
+    <asp:Button CssClass="HomeButtons" ID="LoginButton" runat="server" CommandName="Login" OnClick="Login_OnClick" Text="Login" ValidationGroup="Login" />
                                     
             </LayoutTemplate>
         </asp:Login>
@@ -60,5 +62,4 @@
     </section>
 </body>
 </html>
-    </form>
 </asp:Content>
