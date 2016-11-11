@@ -10,7 +10,7 @@ using System.Web.Security;
 
 namespace BETTERGameWebAppl
 {
-    public sealed class BetterGameMembershiProvider : MembershipProvider
+    public sealed class BetterGameMembershipProvider : MembershipProvider
     {
         public SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["BetterGameDB"].ConnectionString);
 
@@ -245,17 +245,23 @@ namespace BETTERGameWebAppl
             {
                 if(password == dt.Rows[0]["password"].ToString())
                 {
+                    connection.Close();
                     return true;
+                    
                 }
                 else
                 {
+                    connection.Close();
                     return false;
+                    
                 }
             }
             else
             {
+                connection.Close();
                 return false;
-            }
+                
+            } 
         }
     }
 }

@@ -17,7 +17,7 @@ namespace BETTERGameWebAppl
 
         protected void Login_OnClick(object sender, EventArgs args)
         {
-            BetterGameMembershiProvider provider = new BetterGameMembershiProvider();
+            BetterGameMembershipProvider provider = new BetterGameMembershipProvider();
 
             if (provider.ValidateUser(Login.UserName, Login.Password))
                 FormsAuthentication.RedirectFromLoginPage(Login.UserName, Login.RememberMeSet);
