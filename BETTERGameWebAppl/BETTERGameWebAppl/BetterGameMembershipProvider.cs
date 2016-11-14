@@ -204,7 +204,46 @@ namespace BETTERGameWebAppl
         //***********************************************************************************************************************************
         public override MembershipUser GetUser(string username, bool userIsOnline)
         {
-            throw new NotImplementedException();
+            return this.bGetUser(username, userIsOnline);
+        }
+
+        public BetterGameMembershipUser bGetUser(string username, bool userIsOnline)
+        {
+            DataTable dt = new DataTable();
+            connection.Open();
+            SqlCommand sqlCmd = new SqlCommand("SELECT * from UserPerson WHERE userName = @username", connection);
+            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+
+            sqlCmd.Parameters.AddWithValue("@username", username);
+            sqlDa.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                BetterGameMembershipUser user = new BetterGameMembershipUser("BetterGameMembershipProvider",
+                                                                             dt.Rows[0]["userName"].ToString(),
+                                                                             null,
+                                                                             dt.Rows[0]["email"].ToString(),
+                                                                             "",
+                                                                             "",
+                                                                             true,
+                                                                             false,
+                                                                             DateTime.MinValue,
+                                                                             DateTime.MinValue,
+                                                                             DateTime.MinValue,
+                                                                             DateTime.MinValue,
+                                                                             DateTime.MinValue,
+                                                                             dt.Rows[0]["firstName"].ToString(),
+                                                                             dt.Rows[0]["lastName"].ToString(),
+                                                                             dt.Rows[0]["country"].ToString(),
+                                                                             dt.Rows[0]["parentEmail"].ToString());
+
+                connection.Close();
+                return user;
+            }
+            else
+            {
+                connection.Close();
+                return null;
+            }
         }
 
         //***********************************************************************************************************************************

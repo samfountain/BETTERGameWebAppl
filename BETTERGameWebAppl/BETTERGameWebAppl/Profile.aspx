@@ -11,7 +11,6 @@
     <%--Simple display page of profile details, with an update button.--%>
     
     
-    <form runat="server">
     <br />
         
     <br />
@@ -21,7 +20,7 @@
     Email Address: <br /><br />
     Parent Email Address: <br /><br />
     <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/ProfileUpdate.aspx" ID="LinkButton1" runat="server">Update</asp:LinkButton>
-        </form>
+        
 </body>
 </html>
 </asp:Content>
