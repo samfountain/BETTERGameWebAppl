@@ -9,7 +9,9 @@ namespace BETTERGameWebAppl
     public sealed class BetterGameMembershipUser : MembershipUser
     {
         private string _firstName;
-        private string _CustomerID;
+        private string _lastName;
+        private string _country;
+        private string _parentEmail;
 
         public string firstName
         {
@@ -17,10 +19,22 @@ namespace BETTERGameWebAppl
             set { _firstName = value; }
         }
 
-        public string CustomerID
+        public string country
         {
-            get { return _CustomerID; }
-            set { _CustomerID = value; }
+            get { return _country; }
+            set { _country = value; }
+        }
+
+        public string lastName
+        {
+            get { return _lastName; }
+            set { _lastName = value; }
+        }
+
+        public string parentEmail
+        {
+            get { return _parentEmail; }
+            set { _parentEmail = value; }
         }
 
         public BetterGameMembershipUser(string providername,

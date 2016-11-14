@@ -85,6 +85,11 @@ ul.topNavigation li a:hover
     font-size:50px;
 }
 
+.ProfileLabels
+{
+    font-weight:bold;
+}
+
 /*Body of the Home page*/
 .HomeBody 
 {

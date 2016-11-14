@@ -16,22 +16,16 @@ namespace BETTERGameWebAppl
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Membership.GetUser() != null)
+            if (System.Web.HttpContext.Current.User != null && System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
             {
-                DataTable dt = new DataTable();
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["BetterGameDB"].ConnectionString);
-                connection.Open();
-                SqlCommand sqlCmd = new SqlCommand("SELECT * from UserPerson WHERE userName = @username", connection);
-                SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+                BetterGameMembershipProvider provider = new BetterGameMembershipProvider();
+                BetterGameMembershipUser user = (BetterGameMembershipUser)provider.GetUser(System.Web.HttpContext.Current.User.Identity.Name.ToString(), true);
 
-                sqlCmd.Parameters.AddWithValue("@username", "Sherdow");
-                sqlDa.Fill(dt);
-                if (dt.Rows.Count > 0)
-                {
-                    Name.Text = dt.Rows[0]["firstName"].ToString() + " " + dt.Rows[0]["lastName"].ToString();
-
-                }
-                connection.Close();
+                fName.Text = user.firstName;
+                lName.Text = user.lastName;
+                username.Text = user.UserName;
+                email.Text = user.Email;
+                parentEmail.Text = user.parentEmail;
             }
 
             
