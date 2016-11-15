@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="Exercise Upload" Language="C#" MasterPageFile="~/BETTERGameMaster.Master" AutoEventWireup="true" CodeBehind="Exercise.aspx.cs" Inherits="BETTERGameWebAppl.WebForm7" %>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
-<form id="exerciseform" runat="server">
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +15,7 @@
         <%--A required field validator that ensures that the user has written something in the text box--%>
         <asp:RequiredFieldValidator id="exerciseDoneValidator"
                     ControlToValidate="exercisedone"
-                    Display="Static"
+                    Display="Dynamic"
                     ErrorMessage="Exercise description is required!"
                     ForeColor="Red"
                     ValidationGroup="1"
@@ -27,8 +26,18 @@
         <asp:TextBox ID="exercisetime" runat="server" Font-Size="Large"></asp:TextBox><br />
         <asp:RequiredFieldValidator id="exerciseTimeValidator"
                     ControlToValidate="exercisetime"
-                    Display="Static"
+                    Display="Dynamic"
                     ErrorMessage="Exercise time is required!"
+                    ForeColor="Red"
+                    ValidationGroup="1"
+                    runat="server"/>
+        <br />
+        <asp:CompareValidator id="exerciseTimeNum"
+                    ControlToValidate="exercisetime"
+                    Operator="DataTypeCheck"
+                    Type="Integer"
+                    Display="Dynamic"               
+                    ErrorMessage="Exercise time must be a number!"
                     ForeColor="Red"
                     ValidationGroup="1"
                     runat="server"/>
@@ -38,6 +47,5 @@
     </div>
 </body>
 </html>
-</form>
 </asp:Content>
 
