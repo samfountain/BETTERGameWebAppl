@@ -68,8 +68,11 @@ namespace BETTERGameWebAppl
                                         lastPasswordChangedDate,
                                         lastLockedOutDate)
         {
-            
-        }
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.country = country;
+            this.parentEmail = parentEmail;
+    }
         
 
 

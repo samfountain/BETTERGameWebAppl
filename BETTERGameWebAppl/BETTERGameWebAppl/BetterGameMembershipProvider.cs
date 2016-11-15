@@ -265,9 +265,30 @@ namespace BETTERGameWebAppl
         //***********************************************************************************************************************************
         public override void UpdateUser(MembershipUser user)
         {
-            //see example at website : https://msdn.microsoft.com/en-us/library/ms366730.aspx
+            this.bUpdateUser((BetterGameMembershipUser) user);
+        }
 
-            throw new NotImplementedException();
+        public void bUpdateUser(BetterGameMembershipUser user)
+        {
+            connection.Open();
+            SqlCommand sqlCmd = new SqlCommand("UPDATE UserPerson SET "
+                                                + "firstName = @firstName,"
+                                                + "lastName = @lastName,"
+                                                + "email = @email,"
+                                                + "parentEmail = @parentEmail"
+                                                + " WHERE userName = @userName", connection);
+            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+            
+
+            sqlCmd.Parameters.AddWithValue("@username", user.UserName);
+            sqlCmd.Parameters.AddWithValue("@firstName", user.firstName);
+            sqlCmd.Parameters.AddWithValue("@lastName", user.lastName);
+            sqlCmd.Parameters.AddWithValue("@email", user.Email);
+            sqlCmd.Parameters.AddWithValue("@parentEmail", user.parentEmail);
+
+            sqlCmd.ExecuteNonQuery();
+
+            connection.Close();
         }
 
         //***********************************************************************************************************************************

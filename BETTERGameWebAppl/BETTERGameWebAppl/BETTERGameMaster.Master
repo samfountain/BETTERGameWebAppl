@@ -23,7 +23,7 @@
       <li><asp:LinkButton Visible="false" PostBackUrl="~/Exercise.aspx" ID="exerciseBtn" runat="server">Exercise</asp:LinkButton></li>
       <li><asp:LinkButton Visible="false" PostBackUrl="~/Battle.aspx" ID="battleBtn" runat="server">Battle</asp:LinkButton></li>
       <li><asp:LinkButton Visible="false" PostBackUrl="~/HallOfGods.aspx" ID="hogBtn" runat="server">Hall of Gods</asp:LinkButton></li>
-      <li><asp:LinkButton Visible="false" PostBackUrl="~/Home.aspx" ID="logOutBtn" OnClick="logOutBtn_Click" runat="server">Logout</asp:LinkButton></li>
+      <li><asp:LinkButton Visible="false" ID="logOutBtn" OnClick="logOutBtn_Click" runat="server">Logout</asp:LinkButton></li>
       <li><asp:LinkButton Visible="true" PostBackUrl="~/Login.aspx" ID="loginBtn" runat="server">Login</asp:LinkButton></li>
       <li><asp:Label ID="LoginText" Visible="false" runat="server" Text="Label"></asp:Label></li>
     </ul>

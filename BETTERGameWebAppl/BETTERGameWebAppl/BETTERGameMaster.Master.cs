@@ -34,7 +34,7 @@ namespace BETTERGameWebAppl
         protected void logOutBtn_Click(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
-            Response.Redirect(HttpContext.Current.Request.Url.ToString(), true);
+            Response.Redirect(HttpContext.Current.Request.Url.ToString(), false);
 
         }
     }

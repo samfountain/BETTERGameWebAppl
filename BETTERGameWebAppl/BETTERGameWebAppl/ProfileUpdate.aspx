@@ -8,7 +8,7 @@
 </head>
 <body>
     <%--Page to allow users to update their profile details--%>
-    <form runat="server">
+    
             <div>
             <%--Similar layout to the register page, labels, textboxes and validators for the fields to update.--%>
             <asp:Label ID="lblfname" Text="First name" runat="server" AssociatedControlID="firstname"></asp:Label><br />
@@ -26,14 +26,7 @@
             <asp:Label ID="lbllname" Text="Last name" runat="server" AssociatedControlID="lastname"></asp:Label><br />
             <asp:TextBox ID="lastname" runat="server" Font-Size="Large"></asp:TextBox>
             <br/>
-            <asp:RequiredFieldValidator 
-                    id="lastNameValid"
-                    ControlToValidate="lastname"
-                    Display="Static"
-                    ErrorMessage="Last name is required!"
-                    ValidationGroup="1"
-                    ForeColor="Red"
-                    runat="server"/>
+            
             <br/>
             <asp:Label ID="lblemail" Text="Email" runat="server"></asp:Label><br />
             <asp:TextBox ID="email" type="email" runat="server" Font-Size="Large"></asp:TextBox>
@@ -59,18 +52,7 @@
                     ForeColor="Red"
                     runat="server"/>        
             <br />
-             <asp:Label ID="lblpassword" Text="Password" runat="server"></asp:Label><br />
-            <asp:TextBox ID="password"  type="password" runat="server" Font-Size="Large"></asp:TextBox>
-            <br />
-            <asp:RequiredFieldValidator 
-                id="passwordValid"
-                ControlToValidate="password"
-                Display="Static"
-                ErrorMessage="Password is required!"
-                ValidationGroup="1"
-                ForeColor="Red"
-                runat="server"/> 
-            <br />
+             
                 <br />
                 <%--Compare validator for email addresses--%>
                 <asp:CompareValidator 
@@ -89,10 +71,9 @@
                 <br />
                 <br />
                 </div>
-        <asp:LinkButton CssClass="HomeButtons" ID="btnUpdate" runat="server" ValidationGroup="1">Submit</asp:LinkButton> 
-        <asp:LinkButton PostBackUrl="~/Profile.aspx" CssClass="HomeButtons" ID="btnBackToProfile" runat="server">Back</asp:LinkButton>
+        <asp:LinkButton CssClass="HomeButtons" ID="btnUpdate" OnClick="OnClick_btnUpdate" runat="server" ValidationGroup="1">Submit</asp:LinkButton> 
+        <asp:LinkButton PostBackUrl="~/Profile.aspx"  CssClass="HomeButtons" ID="btnBackToProfile" runat="server">Back</asp:LinkButton>
 
-        </form>
 </body>
 </html>
 </asp:Content>
