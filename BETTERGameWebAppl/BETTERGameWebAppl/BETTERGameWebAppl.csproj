@@ -139,6 +139,8 @@
     </Compile>
     <Compile Include="BetterGameMembershipProvider.cs" />
     <Compile Include="BetterGameMembershipUser.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="CharacterInteraction.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
