@@ -157,11 +157,43 @@ namespace BETTERGameWebAppl
                                                     out MembershipCreateStatus status
                                                     )
         {
-            
-            //write create user logic here, good example from website : https://msdn.microsoft.com/en-us/library/ms366730.aspx
 
-            status = MembershipCreateStatus.Success;
-            return null;
+            DataTable dt = new DataTable();
+            connection.Open();
+            SqlCommand sqlCmd = new SqlCommand("SELECT * from UserPerson WHERE userName = @username", connection);
+            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+
+            sqlCmd.Parameters.AddWithValue("@username", username);
+            sqlDa.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                status = MembershipCreateStatus.DuplicateUserName;
+                connection.Close();
+                return null;
+            }
+
+            else
+            {
+                SqlCommand sqlIns = new SqlCommand("INSERT INTO UserPerson VALUES "
+                                                   + "(@username, @password, @firstName, @lastName,@email, @country, @parentEmail",
+                                                   connection);
+                SqlDataAdapter sqlDaIns = new SqlDataAdapter(sqlIns);
+
+                sqlIns.Parameters.AddWithValue("@username", username);
+                sqlIns.Parameters.AddWithValue("@password", password);
+                sqlIns.Parameters.AddWithValue("@firstName", firstName);
+                sqlIns.Parameters.AddWithValue("@lastName", lastName);
+                sqlIns.Parameters.AddWithValue("@email", email);
+                sqlIns.Parameters.AddWithValue("@country", country);
+                sqlIns.Parameters.AddWithValue("@parentEmail", parentEmail);
+
+                sqlIns.ExecuteNonQuery();
+
+                connection.Close();
+                status = MembershipCreateStatus.Success;
+                return null;
+
+            }
         }
 
         public override bool DeleteUser(string username, bool deleteAllRelatedData)
@@ -260,8 +292,7 @@ namespace BETTERGameWebAppl
         {
             throw new NotImplementedException();
         }
-
-        //***********************************************************************************************************************************
+        
         public override void UpdateUser(MembershipUser user)
         {
             this.bUpdateUser((BetterGameMembershipUser) user);
