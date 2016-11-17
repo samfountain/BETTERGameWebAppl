@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    <form runat="server">
     <div>
     <label>Opponent:</label> <br />
     <%--A dropdown list of other users--%>
@@ -41,7 +40,6 @@
     <%--Link to battle page--%>
     
     </div>
-    </form>
 </body>
 </html>
 </asp:Content>

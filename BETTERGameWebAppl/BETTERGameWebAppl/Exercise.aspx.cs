@@ -13,5 +13,15 @@ namespace BETTERGameWebAppl
         {
 
         }
-    }
+
+        protected void Exercise_Click(object sender, EventArgs e)
+        {
+            if (System.Web.HttpContext.Current.User != null && System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                BetterGameMembershipProvider provider = new BetterGameMembershipProvider();
+                BetterGameMembershipUser user = (BetterGameMembershipUser)provider.GetUser(System.Web.HttpContext.Current.User.Identity.Name.ToString(), true);
+
+            }
+            }
+        }
 }
