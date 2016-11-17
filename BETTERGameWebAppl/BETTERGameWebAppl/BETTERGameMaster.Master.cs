@@ -26,7 +26,8 @@ namespace BETTERGameWebAppl
                 profileBtn.Visible = true;
                 battleBtn.Visible = true;
                 exerciseBtn.Visible = true;
-                hogBtn.Visible = true; 
+                hogBtn.Visible = true;
+                
             }
             
         }

@@ -168,8 +168,7 @@ namespace BETTERGameWebAppl
         {
             throw new NotImplementedException();
         }
-
-        //****************************************************************************************************************************************
+        
         public override MembershipUserCollection FindUsersByEmail(string emailToMatch, int pageIndex, int pageSize, out int totalRecords)
         {
             throw new NotImplementedException();
