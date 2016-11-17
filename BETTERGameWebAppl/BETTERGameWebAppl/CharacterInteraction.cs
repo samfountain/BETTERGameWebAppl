@@ -95,5 +95,47 @@ namespace BETTERGameWebAppl
             upd.ExecuteNonQuery();
 
         }
+
+        public int exerciseBracketExp(int time)
+        {
+            DataTable dt = new DataTable();
+            connection.Open();
+            SqlCommand sqlCmd = new SqlCommand("SELECT experience from ExerciseBracket WHERE bracketStart < @time AND bracketEnd > @time", connection);
+
+            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+
+            sqlCmd.Parameters.AddWithValue("@time", time);
+            sqlDa.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                return Convert.ToInt32(dt.Rows[0]["levelId"].ToString());
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public bool exerciseSubmittedToday(Character c)
+        {
+            DataTable dt = new DataTable();
+            connection.Open();
+            SqlCommand sqlCmd = new SqlCommand("SELECT exDate from Exercise WHERE exDate = @date AND userName = @userName AND characterName = @characterName", connection);
+
+            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
+
+            sqlCmd.Parameters.AddWithValue("@date", DateTime.Today);
+            sqlCmd.Parameters.AddWithValue("@userName", c.userName);
+            sqlCmd.Parameters.AddWithValue("@characterName", c.characterName);
+            sqlDa.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
