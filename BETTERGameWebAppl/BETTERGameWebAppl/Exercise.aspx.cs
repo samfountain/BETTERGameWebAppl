@@ -21,7 +21,23 @@ namespace BETTERGameWebAppl
                 BetterGameMembershipProvider provider = new BetterGameMembershipProvider();
                 BetterGameMembershipUser user = (BetterGameMembershipUser)provider.GetUser(System.Web.HttpContext.Current.User.Identity.Name.ToString(), true);
 
-            }
+                CharacterInteraction interaction = new CharacterInteraction();
+
+                Character c = interaction.getCurrentCharacter(user.UserName);
+
+              
+                   if (Convert.ToInt32(exercisetime.Text) > 45)
+                    {
+                        c.experience = c.experience + interaction.exerciseBracketExp(45);
+                    }
+            
+                   else
+                    {
+                        c.experience = c.experience + interaction.exerciseBracketExp(Convert.ToInt32(exercisetime.Text));
+                    }
+                    interaction.updateExperience(c);
+                    Response.Redirect("~/Character.aspx", true);
             }
         }
+    }
 }
