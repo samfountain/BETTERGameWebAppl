@@ -29,12 +29,13 @@ namespace BETTERGameWebAppl
                                             dt.Rows[0]["type"].ToString(),
                                             dt.Rows[0]["characterName"].ToString(),
                                             Convert.ToInt32(dt.Rows[0]["experience"].ToString()));
-
+                connection.Close();
                 return c;
 
             }
             else
             {
+                connection.Close();
                 return null;
             }  
         }
@@ -65,10 +66,12 @@ namespace BETTERGameWebAppl
                     { step, dt.Rows[0]["stepId"].ToString()}
                 };
 
+                connection.Close();
                 return d;
             }
             else
             {
+                connection.Close();
                 return null;
             }
         }
@@ -93,6 +96,7 @@ namespace BETTERGameWebAppl
             upd.Parameters.AddWithValue("@experience", c.experience);
 
             upd.ExecuteNonQuery();
+            connection.Close();
 
         }
 
@@ -108,10 +112,12 @@ namespace BETTERGameWebAppl
             sqlDa.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                connection.Close();
                 return Convert.ToInt32(dt.Rows[0]["levelId"].ToString());
             }
             else
             {
+                connection.Close();
                 return 0;
             }
         }
@@ -130,12 +136,34 @@ namespace BETTERGameWebAppl
             sqlDa.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                connection.Close();
                 return true;
             }
             else
             {
+                connection.Close();
                 return false;
             }
         }
+
+        public void createCharacter(string characterName, string userName, string type)
+        {
+            connection.Open();
+            
+
+            SqlCommand ins = new SqlCommand("INSERT INTO userCharacter VALUES"
+                                            + "(@username,@type,@characterName,0", connection);
+
+            SqlDataAdapter updDa = new SqlDataAdapter(ins);
+
+
+            ins.Parameters.AddWithValue("@username", userName);
+            ins.Parameters.AddWithValue("@characterName", characterName);
+            ins.Parameters.AddWithValue("@type", type);
+
+            ins.ExecuteNonQuery();
+            connection.Close();
+        }
+        
     }
 }

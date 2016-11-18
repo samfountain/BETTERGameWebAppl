@@ -25,18 +25,26 @@ namespace BETTERGameWebAppl
 
                 Character c = interaction.getCurrentCharacter(user.UserName);
 
-              
-                   if (Convert.ToInt32(exercisetime.Text) > 45)
+                if (!interaction.exerciseSubmittedToday(c))
+                {
+                    if (Convert.ToInt32(exercisetime.Text) > 45)
                     {
                         c.experience = c.experience + interaction.exerciseBracketExp(45);
                     }
-            
-                   else
+
+                    else
                     {
                         c.experience = c.experience + interaction.exerciseBracketExp(Convert.ToInt32(exercisetime.Text));
                     }
+
                     interaction.updateExperience(c);
                     Response.Redirect("~/Character.aspx", true);
+                }
+
+                else
+                {
+                    exerciceSubmitted.Visible = true;
+                }
             }
         }
     }

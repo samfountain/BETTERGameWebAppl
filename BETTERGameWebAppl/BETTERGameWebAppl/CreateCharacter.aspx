@@ -43,7 +43,7 @@
                     runat="server"/>
         <br /><br />
     <%--Link button to create character which also validates--%>
-    <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" runat="server" ValidationGroup="1">Create</asp:LinkButton>
+    <asp:LinkButton CssClass="HomeButtons" ID="btncharcreate" OnClick="btncharcreate_Click" runat="server" ValidationGroup="1">Create</asp:LinkButton>
 
     <%--Link button to character page--%>  
         <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Character.aspx" ID="btnBack" runat="server">Back</asp:LinkButton>

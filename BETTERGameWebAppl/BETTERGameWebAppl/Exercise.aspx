@@ -41,7 +41,9 @@
                     ForeColor="Red"
                     ValidationGroup="1"
                     runat="server"/>
+        <asp:Label ID="exerciceSubmitted" Visible="false" ForeColor="Red" runat="server" Text="Label">You have already submitted exercise today!</asp:Label>
         <br /><br />
+        
         <%--Link button to submit exercises--%>   
         <asp:LinkButton CssClass="HomeButtons" ID="btnSubmit" runat="server" CommandName="Exercise" Onclick="Exercise_Click" ValidationGroup="1">Submit</asp:LinkButton>  
     </div>

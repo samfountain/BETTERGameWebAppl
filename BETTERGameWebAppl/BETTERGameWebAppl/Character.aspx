@@ -9,7 +9,6 @@
 </head>
     
 <body>
-    <form runat="server">
     <div>
     <%--Information about user characters--%>
     <label>CHARACTER NAME:</label>  <br />
@@ -20,16 +19,8 @@
     <asp:Label ID="lbllevel" Text="2" runat="server"></asp:Label><br /><br />
     <label>STEP:</label> <br />
     <asp:Label ID="lblstep" Text="3" runat="server"></asp:Label><br /><br />
-    <label>FIGHTS:</label> <br />
-    <asp:Label ID="lblfightnum" Text="14" runat="server"></asp:Label><br /><br />
-    <label>WIN/LOSS:</label> <br />
-    <asp:Label ID="lblwinloss" Text="10/4" runat="server"></asp:Label><br /><br />
-    <%--Button that links to create character page--%>
-    <ul class="CharacterButtons">
-      <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/CreateCharacter.aspx" ID="btnCreateChar" runat="server">Create</asp:LinkButton>
-    </ul>
+    
     </div>
-        </form>
 </body>
 </html>
 </asp:Content>
