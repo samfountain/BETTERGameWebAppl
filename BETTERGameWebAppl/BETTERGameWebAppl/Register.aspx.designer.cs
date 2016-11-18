@@ -193,6 +193,24 @@ namespace BETTERGameWebAppl {
         protected global::System.Web.UI.WebControls.TextBox confirmpassword;
         
         /// <summary>
+        /// lblcountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblcountry;
+        
+        /// <summary>
+        /// ddlCountry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCountry;
+        
+        /// <summary>
         /// confirmPasswordValid control.
         /// </summary>
         /// <remarks>
@@ -218,6 +236,15 @@ namespace BETTERGameWebAppl {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator compareEmail;
+        
+        /// <summary>
+        /// duplicateUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label duplicateUsername;
         
         /// <summary>
         /// btnRegister control.

@@ -11,6 +11,20 @@ namespace BETTERGameWebAppl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (System.Web.HttpContext.Current.User != null && System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+                BetterGameMembershipProvider provider = new BetterGameMembershipProvider();
+                BetterGameMembershipUser user = (BetterGameMembershipUser)provider.GetUser(System.Web.HttpContext.Current.User.Identity.Name.ToString(), true);
+
+                CharacterInteraction interaction = new CharacterInteraction();
+
+                Character c = interaction.getCurrentCharacter(user.UserName);
+
+                if (c == null)
+                {
+                    Response.Redirect("Character.aspx");
+                }
+            }
 
         }
 
@@ -37,6 +51,7 @@ namespace BETTERGameWebAppl
                         c.experience = c.experience + interaction.exerciseBracketExp(Convert.ToInt32(exercisetime.Text));
                     }
 
+                    interaction.insertExercise(user.UserName, c.characterName, Convert.ToInt32(exercisetime.Text), exercisedone.Text);
                     interaction.updateExperience(c);
                     Response.Redirect("~/Character.aspx", true);
                 }

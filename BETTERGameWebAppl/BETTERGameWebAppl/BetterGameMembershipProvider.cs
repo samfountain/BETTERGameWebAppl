@@ -127,7 +127,7 @@ namespace BETTERGameWebAppl
                                                     object providerUserKey,
                                                     out MembershipCreateStatus status)
         {
-            return this.CreateUser(username,
+            return this.bCreateUser(username,
                                     password,
                                     email,
                                     passwordQuestion,
@@ -143,7 +143,7 @@ namespace BETTERGameWebAppl
         }
 
         //*****************************************************************************************************************************************
-        public BetterGameMembershipUser CreateUser(string username,
+        public BetterGameMembershipUser bCreateUser(string username,
                                                     string password,
                                                     string email,
                                                     string passwordQuestion,
@@ -175,7 +175,7 @@ namespace BETTERGameWebAppl
             else
             {
                 SqlCommand sqlIns = new SqlCommand("INSERT INTO UserPerson VALUES "
-                                                   + "(@username, @password, @firstName, @lastName,@email, @country, @parentEmail",
+                                                   + "(@username, @password, @firstName, @lastName,@email, @country, @parentEmail)",
                                                    connection);
                 SqlDataAdapter sqlDaIns = new SqlDataAdapter(sqlIns);
 

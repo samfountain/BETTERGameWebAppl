@@ -19,7 +19,7 @@ namespace BETTERGameWebAppl
                 CharacterInteraction interaction = new CharacterInteraction();
                 Character c = interaction.getCurrentCharacter(user.UserName);
 
-                if (c.characterName != null)
+                if (c != null)
                 {
                     Response.Redirect("~/Character.aspx");
                 }
@@ -35,7 +35,7 @@ namespace BETTERGameWebAppl
 
                 CharacterInteraction interaction = new CharacterInteraction();
 
-                interaction.createCharacter(charname.Text, user.UserName, ddlelement.SelectedValue);
+                interaction.createCharacter(charname.Text, user.UserName, ddlelement.SelectedItem.Text);
             }
         }
     }

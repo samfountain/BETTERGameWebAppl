@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    <form id="createcharacterform" runat="server">
     <div>
     <%--A dropdown list of elements--%>
     <asp:Label ID="lblcharelement" Text="Element: " runat="server"></asp:Label> <br />
@@ -48,7 +47,6 @@
     <%--Link button to character page--%>  
         <asp:LinkButton CssClass="HomeButtons" PostBackUrl="~/Character.aspx" ID="btnBack" runat="server">Back</asp:LinkButton>
     </div>
-    </form>
 </body>
 </html>
 </asp:Content>

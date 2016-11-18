@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="MasterStyleSheet.css"/>
 </head>
 <body>
-    <form runat="server">
     <%--An unordered list that holds links to related pages--%>
     <asp:LinkButton PostBackUrl="~/Challenge.aspx" CssClass="HomeButtons" ID="btnChallenge" runat="server">Challenge</asp:LinkButton>
       <br /><br />
@@ -36,6 +35,5 @@
     </div>
      
     </body>
-</form>
 </html>
 </asp:Content>

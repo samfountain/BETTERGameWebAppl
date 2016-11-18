@@ -19,7 +19,7 @@ namespace BETTERGameWebAppl
                 CharacterInteraction interaction = new CharacterInteraction();
                 Character c = interaction.getCurrentCharacter(user.UserName);
 
-                if (c.characterName != null)
+                if (c != null)
                 {
                     Dictionary<string, string> d = interaction.getLevelStep(c.experience);
 

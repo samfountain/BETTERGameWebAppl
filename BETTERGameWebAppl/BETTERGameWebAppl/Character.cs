@@ -41,10 +41,10 @@ namespace BETTERGameWebAppl
                          string characterName,
                          int experience)
         {
-            this.userName = _userName;
-            this.type = _type;
-            this.characterName = _characterName;
-            this.experience = _experience;
+            this.userName = userName;
+            this.type = type;
+            this.characterName = characterName;
+            this.experience = experience;
 
         }
             

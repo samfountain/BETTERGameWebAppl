@@ -17,7 +17,7 @@ namespace BETTERGameWebAppl
             DataTable dt = new DataTable();
             connection.Open();
             SqlCommand sqlCmd = new SqlCommand("SELECT * from userCharacter WHERE userName = @username "
-                                                                            + "experience < @experience", connection);
+                                                                            + "AND experience < @experience", connection);
             SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
 
             sqlCmd.Parameters.AddWithValue("@username", username);
@@ -52,8 +52,8 @@ namespace BETTERGameWebAppl
 
             DataTable dt = new DataTable();
             connection.Open();
-            SqlCommand sqlCmd = new SqlCommand("SELECT * from Step WHERE bracketStart < @experience "
-                                                                   + "bracketEnd > @experience", connection);
+            SqlCommand sqlCmd = new SqlCommand("SELECT * from Step WHERE bracketStart <= @experience "
+                                                                   + "AND bracketEnd >= @experience", connection);
             SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd);
             
             sqlCmd.Parameters.AddWithValue("@experience", experience);
@@ -113,7 +113,7 @@ namespace BETTERGameWebAppl
             if (dt.Rows.Count > 0)
             {
                 connection.Close();
-                return Convert.ToInt32(dt.Rows[0]["levelId"].ToString());
+                return Convert.ToInt32(dt.Rows[0]["experience"].ToString());
             }
             else
             {
@@ -152,7 +152,7 @@ namespace BETTERGameWebAppl
             
 
             SqlCommand ins = new SqlCommand("INSERT INTO userCharacter VALUES"
-                                            + "(@username,@type,@characterName,0", connection);
+                                            + "(@username,@characterName,@type,0)", connection);
 
             SqlDataAdapter updDa = new SqlDataAdapter(ins);
 
@@ -163,6 +163,27 @@ namespace BETTERGameWebAppl
 
             ins.ExecuteNonQuery();
             connection.Close();
+        }
+
+        public void insertExercise(string userName, string characterName, int time, string desc)
+        {
+            connection.Open();
+
+
+            SqlCommand ins = new SqlCommand("INSERT INTO Exercise VALUES"
+                                            + "(@username,@characterName,@date,@time,@desc)", connection);
+
+            SqlDataAdapter updDa = new SqlDataAdapter(ins);
+            
+            ins.Parameters.AddWithValue("@username", userName);
+            ins.Parameters.AddWithValue("@characterName", characterName);
+            ins.Parameters.AddWithValue("@date", DateTime.Today);
+            ins.Parameters.AddWithValue("@time", time);
+            ins.Parameters.AddWithValue("@desc", desc);
+
+            ins.ExecuteNonQuery();
+            connection.Close();
+
         }
         
     }
